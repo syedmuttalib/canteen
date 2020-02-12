@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Student login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+
+<body>
+    
+    <nav>
+        <div class="header">
+          <nav>
+    
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSq1wQTsyxy4ksYyzQyMP_v6jmbAAHY1FrRSAfbJbdRrY-15LeD"
+              width="150px" height="60px">
+    
+    
+    
+            <ul>
+              <li><a href="mainp.html">Home</a>
+              </li>
+              
+              <li><a href="feed.html">Feedback</a>
+              </li>
+              
+            </ul>
+          </nav>
+        </div>
+
+
+
+
+    <div class="loginbox">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR3H3EhVI09T1jfYwex-jDxGJoUaEcqUI4GFJH6vvvIYFU8RXL-"
+            class="avatar">
+<h1>
+    Admin Login
+</h1>
+<form>
+    <p>Username</p>
+    <input type="email" id="email" placeholder="Enter username">
+    <p>Password</p>
+    <input type="password" id="password" placeholder="Enter password">
+    <button type="button" id="btn2" class="btn">Login</button>
+    
+</form>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="app1.js"></script>
+
+        <script>
+
+         firebase.auth().onAuthStateChanged(function(user){
+
+                       if(user) {
+                           window.location.href = "sidebar.html"
+                       }
+
+         }) ;
+
+
+         
+
+        </script>
+</body>
+</head>
+</html>
